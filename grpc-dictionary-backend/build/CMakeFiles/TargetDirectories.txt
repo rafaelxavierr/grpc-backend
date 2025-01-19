@@ -1,3 +1,0 @@
-/home/rafael/pspd/grpc-backend/grpc-dictionary-backend/build/CMakeFiles/rebuild_cache.dir
-/home/rafael/pspd/grpc-backend/grpc-dictionary-backend/build/CMakeFiles/edit_cache.dir
-/home/rafael/pspd/grpc-backend/grpc-dictionary-backend/build/CMakeFiles/dictionary_server.dir

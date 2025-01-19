@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+service Dictionary {
+  rpc UpdateWord (WordRequest) returns (WordResponse);
+  rpc GetDictionary (Empty) returns (DictionaryResponse);
+}
+
+message WordRequest {
+  string word = 1;
+}
+
+message WordResponse {
+  string message = 1;
+}
+
+message DictionaryResponse {
+  map<string, int32> dictionary = 1;
+}
+
+message Empty {}

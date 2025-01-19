@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  grpc-server:
+    build: ./grpc-server
+    container_name: grpc-server
+    ports:
+      - "50051:50051"
+    networks:
+      - app-network
+
+  grpc-client:
+    build: ./grpc-client
+    container_name: grpc-client
+    depends_on:
+      - grpc-server
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
